@@ -1,11 +1,11 @@
 # async-request
 Async Request Demo Application written with Node.js
 
-- Set following Environment variables
--- GITHUB_CLIENT_ID
--- GITHUB_CLIENT_SECRET
+1. Set following Environment variables
+  2. **GITHUB_CLIENT_ID**
+  3. **GITHUB_CLIENT_SECRET**
 
-- Configure endpoints ind config/default.json
+2. Configure endpoints in `config/default.json`
 
-- npm install && node server.js
+3. Run `npm install && node server.js`
 
