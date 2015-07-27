@@ -9,3 +9,5 @@ Async Request Demo Application written with Node.js
 
 3. Run `npm install && node server.js`
 
+4. Call `http://<host>:<port>/api/<endpoint_name>`
+
