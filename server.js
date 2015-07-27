@@ -28,11 +28,12 @@ router.get('*', function(req, res, next) {
                 var options = {
                     host: config.endpoints[endpointName].host,
                     port: 443,
-                    path: repo,
+                    path: repo + "?client_id=" + process.env.GITHUB_CLIENT_ID + "&client_secret=" + process.env.GITHUB_CLIENT_SECRET,
                     method: "GET",
                     headers: {'user-agent': 'Mozilla/5.0'}
                 };
                 https.get(options, function (resource) {
+                    console.log("Fetching repository from Github for: " + user);
                     resource.setEncoding('utf8');
                     resource.on('data', function (data) {
                         content += data;
