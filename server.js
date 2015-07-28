@@ -39,7 +39,10 @@ router.get('*', function(req, res, next) {
                         content += data;
                     }).on('end', function(data) {
                         var repoObj = {}
-                        repoObj[user] = JSON.parse(content);
+                        var repoData = _.map(JSON.parse(content), function(value, key) {
+                            return new Object({name: value.name, star: value.stargazers_count});
+                        });
+                        repoObj[user] = repoData;
                         callback(null, repoObj);
                     })
                 });
