@@ -1,7 +1,7 @@
 # async-request
 Async Request Demo Application written with Node.js
 
-1. Set following Environment variables
+1. Set following Environment variables after creating [Github Application](https://github.com/settings/developers)
   2. **GITHUB_CLIENT_ID**
   3. **GITHUB_CLIENT_SECRET**
 
