@@ -5,7 +5,7 @@ var logger     = require('morgan');
 var _          = require('underscore');
 var config     = require('config');
 var async      = require('async');
-var https       = require('https');
+var https      = require('https');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
